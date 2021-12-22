@@ -1,22 +1,16 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Leaderboard
 
-# Todo List
-
-> This is a minimal yet powerful to-do list.
+> Leaderboard displays scores submitted by different players.
 
 ![screenshot](./src/assets/app_screenshot.png)
 
-The application has functionality to add, remove, mark as completed, and reorder todo item.
+The application has functionality to add and display scores.
 
 ## Built With
 
 - HTML
 - CSS
 - Javascript
-
-## Live Demo
-
-- [Demo](https://afizsavage.github.io/todo-list/)
 
 ## Getting Started
 
@@ -30,11 +24,11 @@ To get a local copy up and running follow these simple example steps.
 
 2.  Next, clone the remote repository and create a local copy on your machine using this command:
 
-    - `git clone https://github.com/afizsavage/todo-list`
+    - `git clone https://github.com/afizsavage/leaderboard`
 
 3.  Now you can see the contents of the remote repository on your machine by moving into the newly cloned directory:
 
-    - `todo-list`
+    - `leaderboard`
     - `ls -la`
 
 4.  run `npm install` on the command line to download all dependency packages.
