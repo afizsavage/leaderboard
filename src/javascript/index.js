@@ -1,4 +1,8 @@
 import '../styles/index.css';
+import addScore from './add';
+
+const submitBtn = document.querySelector('input[type= "submit"]');
+const refreshBtn = document.getElementById('refresh');
 
 const fetchScores = async () => {
   const response = await fetch(
@@ -17,6 +21,17 @@ const displayScores = (scoresArg) => {
     listContainer.innerHTML = listItems;
   });
 };
+
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  addScore();
+});
+
+refreshBtn.addEventListener('click', () => {
+  fetchScores().then((scores) => {
+    displayScores(scores);
+  });
+});
 
 const load = () => {
   fetchScores().then((scores) => {
