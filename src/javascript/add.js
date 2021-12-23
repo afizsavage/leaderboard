@@ -18,7 +18,7 @@ const addScoreToAPI = async (nameArg, scoreArg) => {
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
-    }
+    },
   );
   const resMsg = await response.json();
   return resMsg;

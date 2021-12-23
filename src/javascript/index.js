@@ -1,12 +1,12 @@
 import '../styles/index.css';
-import addScore from './add';
+import addScore from './add.js';
 
 const submitBtn = document.querySelector('input[type= "submit"]');
 const refreshBtn = document.getElementById('refresh');
 
 const fetchScores = async () => {
   const response = await fetch(
-    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/C1YVwF2qfkI9ZCq4djAP/scores'
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/C1YVwF2qfkI9ZCq4djAP/scores',
   );
   const scores = await response.json();
   return scores;
