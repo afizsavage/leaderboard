@@ -10,7 +10,6 @@
 
 .item2 {
   grid-area: scores;
-  padding-left: 10rem;
 }
 
 .item3 {
@@ -81,7 +80,7 @@ ul {
 }
 
 li {
-  padding: 0.5rem;
+  padding: 0.8rem;
 }
 
 li:nth-child(odd) {

@@ -5,22 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
+
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1 class="item1">Leaderboard</h1>
-    <section class="item2">
-      <div class="add-cont">
-        <h2>Recent scores</h2>
-        <button id="refresh" type="button">Refresh</button>
+    <h1 class="item1 bg-gray-300 h-24 pl-20 pt-3 text-red-500 center">
+      Leaderboard
+    </h1>
+    <section class="item2 relative">
+      <div class="add-cont absolute left-80">
+        <h2 class="text-gray-700">Recent scores</h2>
+        <button
+          class="bg-purple-400 font-semibold text-white rounded"
+          id="refresh"
+          type="button"
+        >
+          Refresh
+        </button>
       </div>
-      <ul></ul>
+      <ul class="absolute left-80 top-16"></ul>
     </section>
-    <section class="item3">
-      <h2>Add your score</h2>
-      <form>
-        <input type="text" placeholder="Your name" />
-        <input id="score" type="text" placeholder="Your score" />
-        <input type="submit" value="Submit" />
+    <section class="item3 relative">
+      <h2 class="text-gray-700 absolute left-64">Add your score</h2>
+      <form class="absolute left-64 top-16">
+        <input
+          class="border-gray-300 border-2 rounded-lg outline-none mb-6"
+          type="text"
+          placeholder="Your name"
+        />
+        <input
+          class="border-gray-300 border-2 rounded-lg outline-none mb-6"
+          id="score"
+          type="text"
+          placeholder="Your score"
+        />
+        <input
+          class="bg-purple-400 font-semibold text-white rounded"
+          type="submit"
+          value="Submit"
+        />
       </form>
     </section>
   </body>
