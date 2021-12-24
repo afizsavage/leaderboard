@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
-
     <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
       rel="stylesheet"
     />
   </head>
@@ -19,7 +18,13 @@
       <div class="add-cont absolute left-80">
         <h2 class="text-gray-700">Recent scores</h2>
         <button
-          class="bg-purple-400 font-semibold text-white rounded"
+          class="
+            bg-purple-400
+            font-semibold
+            text-white
+            rounded
+            focus:bg-purple-600
+          "
           id="refresh"
           type="button"
         >
@@ -43,7 +48,13 @@
           placeholder="Your score"
         />
         <input
-          class="bg-purple-400 font-semibold text-white rounded"
+          class="
+            bg-purple-400
+            focus:bg-purple-600
+            font-semibold
+            text-white
+            rounded
+          "
           type="submit"
           value="Submit"
         />
